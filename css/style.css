@@ -228,6 +228,7 @@ nav.in li {
   width: 100%;
   min-height: 100%;
   top: 0px;
+  background-attachment: fixed;　
 }
 
 .header h1 {
