@@ -242,6 +242,17 @@ nav.in li {
   top: 50%;
 }
 
+.header h2 {
+  width: 100%;
+  color: #fff;
+  position: absolute;
+  margin: 0;
+  font-family: "Patua One", cursive;
+  text-align: center;
+  display: block;
+  top: 70%;
+}
+
 .content {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
