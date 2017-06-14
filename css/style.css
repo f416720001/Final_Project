@@ -155,7 +155,7 @@ nav ul {
 nav li {
   height: 20%;
   position: relative;
-  background-image: linear-gradient(-60deg, #16a085 0%, #f4d03f 100%);
+  background-image: linear-gradient(to left, #c1c161 0%, #c1c161 20%, #c4c4c1 80%);
   color: #ddd;
   font-family: "Patua One", cursive;
 }
