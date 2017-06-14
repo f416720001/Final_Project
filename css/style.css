@@ -11,6 +11,33 @@ p {
   line-height: 1.5;
 }
 
+#home-trigger {
+  position: fixed;
+  width: 110px;
+  height: 98px;
+  left: -30px;
+  top: 10px;
+  cursor: pointer;
+  z-index: 200;
+  -webkit-transform-origin: 110px 0px;
+  -moz-transform-origin: 110px 0px;
+  -ms-transform-origin: 110px 0px;
+  -o-transform-origin: 110px 0px;
+  transform-origin: 110px 0px;
+  -webkit-transform: scale(0.6);
+  -moz-transform: scale(0.6);
+  -ms-transform: scale(0.6);
+  -o-transform: scale(0.6);
+  transform: scale(0.6);
+  -webkit-transition: background 0.3s linear;
+  -moz-transition: background 0.3s linear;
+  transition: background 0.3s linear;
+}
+
+.fa-home {
+  color: white;
+}
+
 .nav-trigger {
   position: fixed;
   width: 110px;
@@ -104,6 +131,11 @@ nav.out {
 
 nav.in {
   pointer-events: auto;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ddd;
 }
 
 nav ul, li {
@@ -222,13 +254,27 @@ nav.in li {
 }
 
 .header {
+  　
+}
+
+.index {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/bg.jpg);
   background-size: cover;
   position: relative;
   width: 100%;
   min-height: 100%;
   top: 0px;
-  background-attachment: fixed;　
+  background-attachment: fixed;
+}
+
+.animal {
+  background: url(../img/animal.jpg);
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  top: 0px;
+  background-attachment: fixed;
 }
 
 .header h1 {
