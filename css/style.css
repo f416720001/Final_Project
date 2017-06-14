@@ -403,7 +403,7 @@ figure:hover+span {
 }
 
 .fixed_footer p{
-  color: #696969;
+  color: #ddd;
   column-count: 2;
   column-gap: 50px;
   font-size: 1em;
@@ -493,4 +493,13 @@ figure:hover+span {
       color: #3a5876;
       background: #fff;
 }
+
+.copyright {
+  color: #ddd;
+  font-size: 13px;
+  width: 200%;
+  position: absolute;
+  text-align: center;
+}
+
 /* Footer */
