@@ -1,5 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Patua+One);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   background: #ddd;
   height: 100%;
@@ -363,6 +368,46 @@ figure:hover+span {
 	bottom: 35px;   /*調整圖片下文字距離*/
 	opacity: 1;
 }
+
+/* Scroll Arrow*/
+.fa-angle-down {
+  left: 50%;
+  position: absolute;
+  bottom: 0;
+  -webkit-animation: jump 1.5s infinite;
+          animation: jump 1.5s infinite;
+}
+.fa-angle-up {
+  position: absolute;
+  bottom: 1px;
+  right: 30px;
+  color: #000;
+  font-size: 1em;
+}
+@-webkit-keyframes jump {
+  0% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 10px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+@keyframes jump {
+  0% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 10px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+/* Scroll Arrow*/
+
 
 /* Gray Scale */
 .hover08:before {

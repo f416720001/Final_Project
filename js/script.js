@@ -47,3 +47,12 @@ function navToggle(e) {
 }
 
 window.onload = resize;
+
+
+"use strict";
+
+var gotoOne = function gotoOne() {
+  return $.scrollTo($("#content"), 800);
+};
+
+$("#topArrow").click(gotoOne);
