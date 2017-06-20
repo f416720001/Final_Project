@@ -65,3 +65,6 @@ $(document).ready(function() {
     $('#list').click(function(event){event.preventDefault();$('#products .item').addClass('list-group-item');});
     $('#grid').click(function(event){event.preventDefault();$('#products .item').removeClass('list-group-item');$('#products .item').addClass('grid-group-item');});
 });
+
+//彈出視窗
+var winvar = window.open("member.html","登入&註冊","location,menubar=1 status,toolbar,scrollbars=0");

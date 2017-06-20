@@ -8,6 +8,14 @@
   background-attachment: fixed;
 }
 
+#displayname {
+  z-index: 1;
+  position: absolute;
+  width: 200px;
+  right: 10px;
+  color: #fff;
+}
+
 .glyphicon {
     margin-right: 5px;
 }
