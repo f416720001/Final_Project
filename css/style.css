@@ -282,6 +282,10 @@ nav.in li {
   background-attachment: fixed;
 }
 
+.animal h1:hover {
+  color: rgb(212, 212, 212);
+}
+
 .plastic {
   background: url(../img/plastic.png);
   background-size: cover;
@@ -290,6 +294,10 @@ nav.in li {
   min-height: 100%;
   top: 0px;
   background-attachment: fixed;
+}
+
+.plastic h1:hover {
+  color: rgb(212, 212, 212);
 }
 
 .water {
@@ -302,6 +310,10 @@ nav.in li {
   background-attachment: fixed;
 }
 
+.water h1:hover {
+  color: rgb(212, 212, 212);
+}
+
 .air {
   background: url(../img/air.png);
   background-size: cover;
@@ -310,6 +322,10 @@ nav.in li {
   min-height: 100%;
   top: 0px;
   background-attachment: fixed;
+}
+
+.air h1:hover {
+  color: rgb(212, 212, 212);
 }
 
 /*  big image  */
@@ -355,7 +371,8 @@ nav.in li {
 }
 
 .fa p {
-  font-size: 2vw;
+  font-size: 1.5vw;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .fa-angle-down {
@@ -402,6 +419,13 @@ nav.in li {
 .row .box {
   margin-bottom: 80px;
 }
+.row .box p {
+  font-size: 16px;
+}
+.row .box h2 {
+  font-weight: bold;
+  font-size: 20px;
+}
 .row div span {
 	position: absolute;
 	bottom: -20px;
@@ -426,6 +450,7 @@ figure {
 	padding: 0;
 	background: #fff;
 	overflow: hidden;
+  cursor: pointer;
 }
 figure:hover+span {
 	bottom: -40px;   /*調整圖片下文字距離*/
