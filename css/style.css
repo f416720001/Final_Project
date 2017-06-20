@@ -354,8 +354,12 @@ nav.in li {
   cursor: pointer;
 }
 
+.fa p {
+  font-size: 2vw;
+}
+
 .fa-angle-down {
-  left: 48%;
+  left: 75%;
   position: absolute;
   bottom: 0;
   -webkit-animation: jump 1.5s infinite;
@@ -459,16 +463,20 @@ figure:hover+span {
 }
 
 .fixed_footer p{
-  color: #ddd;
   column-count: 2;
   column-gap: 50px;
   font-size: 1em;
   font-weight: 300;
 }
 
+/*  social  */
 #social {
   margin: 20px 10px;
   text-align: center;
+}
+
+#social a {
+  text-decoration: none;
 }
 
 .smGlobalBtn{ /* global button class */
@@ -535,6 +543,8 @@ figure:hover+span {
       background: #fff;
 }
 
+
+
 /* tumblr button class*/
 .tumblrBtn{
     background: #3a5876;
@@ -549,6 +559,7 @@ figure:hover+span {
       color: #3a5876;
       background: #fff;
 }
+/*  social  */
 
 .copyright {
   color: #ddd;
