@@ -160,7 +160,7 @@ nav ul {
 nav li {
   height: 20%;
   position: relative;
-  background-image: linear-gradient(to left, #c1c161 0%, #c1c161 20%, #c4c4c1 80%);
+  background-image: linear-gradient(-60deg, #16a085 0%, #f4d03f 100%);
   color: #ddd;
   font-family: "Patua One", cursive;
 }
@@ -261,9 +261,9 @@ nav.in li {
 .header {
   　
 }
-
+/*  big image  */
 .index {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/bg.jpg);
+  background: url(../img/home.jpg);
   background-size: cover;
   position: relative;
   width: 100%;
@@ -281,6 +281,38 @@ nav.in li {
   top: 0px;
   background-attachment: fixed;
 }
+
+.plastic {
+  background: url(../img/plastic.png);
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  top: 0px;
+  background-attachment: fixed;
+}
+
+.water {
+  background: url(../img/water.png);
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  top: 0px;
+  background-attachment: fixed;
+}
+
+.air {
+  background: url(../img/air.png);
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  top: 0px;
+  background-attachment: fixed;
+}
+
+/*  big image  */
 
 .header h1 {
   width: 100%;
@@ -315,63 +347,14 @@ nav.in li {
   margin-bottom: 150px; /* Same height as footer */
 }
 
-/**/
-.column {
-	margin: 25px 0 0 30px;
-	padding: 0;
-}
-.column:last-child {
-	padding-bottom: 60px;
-}
-.column::after {
-	content: '';
-	clear: both;
-	display: block;
-}
-.column div {
-	position: relative;
-	float: left;
-	width: 300px;
-	height: 280px;               /*調整圖片間的間距*/
-	margin-right: 30px;
-	padding: 0;
-}
-.column div:first-child {
-	margin-left: 0;
-}
-.column div span {
-	position: absolute;
-	bottom: -20px;
-	left: 0;
-	z-index: -1;
-	display: block;
-	width: 300px;
-	margin: 0;
-	padding: 0;
-	color: #444;
-	font-size: 18px;
-	text-decoration: none;
-	text-align: center;
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-	opacity: 0;
-}
-figure {
-	width: 300px;
-	height: 200px;
-  margin: 0;
-	padding: 0;
-	background: #fff;
-	overflow: hidden;
-}
-figure:hover+span {
-	bottom: 35px;   /*調整圖片下文字距離*/
-	opacity: 1;
-}
 
 /* Scroll Arrow*/
+.fa {
+  cursor: pointer;
+}
+
 .fa-angle-down {
-  left: 50%;
+  left: 48%;
   position: absolute;
   bottom: 0;
   -webkit-animation: jump 1.5s infinite;
@@ -409,29 +392,59 @@ figure:hover+span {
 /* Scroll Arrow*/
 
 
-/* Gray Scale */
-.hover08:before {
-  -webkit-box-shadow: 0 15px 10px #777;
-  -moz-box-shadow: 0 15px 10px #777;
-  box-shadow: 0 15px 10px #777;
-  -webkit-transform: rotate(-3deg);
-  -moz-transform: rotate(-3deg);
-  -o-transform: rotate(-3deg);
-  -ms-transform: rotate(-3deg);
-  transform: rotate(-3deg);
+
+/*  column  */
+.row {
+  padding: 40px;
 }
-.hover08 figure img {
+.row .box {
+  margin-bottom: 80px;
+}
+.row div span {
+	position: absolute;
+	bottom: -20px;
+	left: 0;
+	z-index: -1;
+	display: block;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	color: #444;
+	font-size: 18px;
+	text-decoration: none;
+	text-align: center;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+	opacity: 0;
+}
+figure {
+	width: 300px;
+	height: 200px;
+  margin: auto;
+	padding: 0;
+	background: #fff;
+	overflow: hidden;
+}
+figure:hover+span {
+	bottom: -40px;   /*調整圖片下文字距離*/
+	opacity: 1;
+}
+/*  column  */
+
+/* Gray Scale */
+
+.row figure img {
 	-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
 }
-.hover08 figure:hover img {
+.row figure:hover img {
 	-webkit-filter: grayscale(0);
 	filter: grayscale(0);
 }
 
-
+/* Gray Scale */
 
 
 
