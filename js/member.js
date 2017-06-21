@@ -68,6 +68,12 @@ $('.tab a').on('click', function (e) {
   const $firstName = $('#fname');
   const $lastName = $('#lname');
   const $displayName = $('#displayname');
+  const $buy01 = $('#buy_item01');
+  const $buy02 = $('#buy_item02');
+  const $buy03 = $('#buy_item03');
+  const $buy04 = $('#buy_item04');
+  const $buy05 = $('#buy_item05');
+  const $buy06 = $('#buy_item06');
   //const $btnSignIn = $('#btnSignIn');
   //const $btnSignUp = $('#btnSignUp');
   //const $btnSignOut = $('#btnSignOut');
@@ -115,7 +121,7 @@ $('.tab a').on('click', function (e) {
   firebase.auth().onAuthStateChanged(function(user){
     if(user) {
       console.log(user);
-      $displayName.html(user.email +" is login...");
+      $displayName.html(user.email);
       //const dbUserid = dbUser.child(user.uid);
       loadData(user);
 
@@ -143,3 +149,24 @@ $('.tab a').on('click', function (e) {
       $('#profile-email').html(snapshot.val().email);
     });
   }
+
+
+//shopping cart
+$buy01.click(function(e){
+  console.log("環保筷");
+});
+$buy02.click(function(e){
+  console.log("鐵吸管");
+});
+$buy03.click(function(e){
+  console.log("保溫杯");
+});
+$buy04.click(function(e){
+  console.log("飛機杯");
+});
+$buy05.click(function(e){
+  console.log("環保購物袋");
+});
+$buy06.click(function(e){
+  console.log("不鏽鋼水壺及馬克杯組");
+});

@@ -361,8 +361,9 @@ nav.in li {
   padding: 0px;
   margin: 0 auto;
   padding-top: 40px;
-  margin-bottom: 150px; /* Same height as footer */
+
 }
+
 
 
 /* Scroll Arrow*/
@@ -428,7 +429,7 @@ nav.in li {
 }
 .row div span {
 	position: absolute;
-	bottom: -20px;
+	bottom: -15px;
 	left: 0;
 	z-index: -1;
 	display: block;
@@ -453,7 +454,7 @@ figure {
   cursor: pointer;
 }
 figure:hover+span {
-	bottom: -40px;   /*調整圖片下文字距離*/
+	bottom: -35px;   /*調整圖片下文字距離*/
 	opacity: 1;
 }
 /*  column  */
